@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CoolRatingBar">
+        <attr name="shapeFillType">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="shape">
+            <enum name="star" value="0" />
+            <enum name="heart" value="1" />
+        </attr>
+
+        <attr name="shapeViewWidth" format="dimension" />
+        <attr name="shapeViewHeight" format="dimension" />
+        <attr name="shapeViewGapWidth" format="dimension" />
+    </declare-styleable>
+
+</resources>

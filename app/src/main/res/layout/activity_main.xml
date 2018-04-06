@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="chris.coolratingbar.MainActivity">
+
+    <chris.coolratingbar.view.StarView
+        android:id="@+id/star"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <chris.coolratingbar.view.HeartView
+        android:id="@+id/heart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/star" />
+
+    <chris.coolratingbar.view.RatingBarView
+        android:id="@+id/heart_rating_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/heart"
+        app:shape="heart"
+        app:shapeFillType="horizontal"
+        app:shapeViewWidth="50dp" />
+
+    <chris.coolratingbar.view.RatingBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/heart_rating_bar"
+        app:shape="star"
+        app:shapeFillType="horizontal"
+        app:shapeViewHeight="30dp" />
+
+</android.support.constraint.ConstraintLayout>
